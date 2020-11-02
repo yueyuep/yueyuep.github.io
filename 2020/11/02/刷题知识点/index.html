@@ -31,7 +31,8 @@
         <hr>
     </div>
     <div class="post-content">
-        <h3 id="List、Array之间的转换方式"><a href="#List、Array之间的转换方式" class="headerlink" title="List、Array之间的转换方式"></a>List、Array之间的转换方式</h3><p> int [] 向List<Integer>之间转换</p>
+        <p>title: 刷题知识点总结</p>
+<h3 id="List、Array之间的转换方式"><a href="#List、Array之间的转换方式" class="headerlink" title="List、Array之间的转换方式"></a>List、Array之间的转换方式</h3><p> int [] 向List<Integer>之间转换</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] test=<span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line"><span class="keyword">int</span>[] tmp = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>&#125;;</span><br><span class="line">List&lt;Integer&gt; toList = Arrays.stream(tmp).boxed().collect(Collectors.toList());</span><br></pre></td></tr></table></figure>
 
 <p>List<Integer>向int[]转换</p>
